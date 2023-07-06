@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js"></script>
     <title>E-Groceries</title>
 </head>
 <body>
@@ -50,14 +51,22 @@
     </header>
 
     <main>
+        
+
+
         <section id="callus">
             <!--testimoni start-->
             <article class="article">
-                <section>
-                    <img class="gambartestimoni" src="assets/sayurbuah.jpg" alt="Foto testimoni">
-                </section>
+                <div class="slider">
+                    <div class="img-box">
+                        <img src="assets/sayur1.jpg" class="slider-img">
+                    </div>
+        
+                    <button class="btn" onclick="prev()">Prev</button>
+                    <button class="btn" onclick="next()">Next</button>
+                </div>        
                 <div class="testimoni">
-                    <p class="testimoni-text">"Setiap hari beli sayur buah yang fresh disini"</p>
+                    <p class="testimoni-text">"Setiap hari beli sayur dan buah yang fresh disini"</p>
                     <div class="testimoni-profile">
                       <img src="assets/yedam.jpg" alt="foto profil" />
                     </div>
@@ -72,20 +81,25 @@
             <section id="judulform">
                 <h3 class="contactus">Contact Us</h3>
                 <p class="contactustext">Sales akan menghubungin anda</p>
-                <form class="contactusform" action="" method="POST">
-                  <label for="name">Your Name</label><br />
-                  <input type="text" id="name" /><br />
-      
-                  <label for="email">Email</label><br />
-                  <input type="text" id="email" /><br />
-      
-                  <label for="number">Phone Number</label><br />
-                  <input type="text" id="number" /><br />
-      
-                  <label for="massage">Massage</label><br />
-                  <textarea type="textarea" id="massage"></textarea><br />
-      
-                  <button>Send</button>
+                <div id="error"></div>
+                <form class="contactusform" action="/" method="POST">
+                    <div>
+                        <label for="nama">Your Name</label><br />
+                        <input type="text" id="nama" required><br />
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br />
+                        <input type="text" id="email" required><br />
+                    </div>
+                    <div>
+                        <label for="number">Phone Number</label><br />
+                        <input type="text" id="number" required><br />
+                    </div>
+                    <div>
+                        <label for="massage">Massage</label><br />
+                        <textarea type="textarea" id="massage" required></textarea><br />
+                    </div>
+                    <button class="send">Send</button>
                 </form>
             </section>
 
@@ -146,7 +160,7 @@
         <div id="callaction">
             <h1 class="callactiohead">Hidup sehat mulai sekarang!</h1>
             <p class="callactionsub">Makanlah buah dan sayuran Anda untuk kesehatan yang prima dan kulit yang bercahaya</p>
-            <button class="belisekarang">Beli Sekarang!</button>
+            <button class="belisekarang"><a href="#header">Beli Sekarang!</a></button>
         </div>
 
         <!--footer start-->
@@ -158,9 +172,9 @@
             </section>
             <section class="footernav">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Our Package</a></li>
-                    <li><a href="">Call Us</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#package">Our Package</a></li>
+                    <li><a href="#callaction">Call Us</a></li>
                 </ul>
             </section>
         </section>
