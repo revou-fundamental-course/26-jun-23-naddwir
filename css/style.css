@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: "Lato", sans-serif;
     background-color: #fff9da;
 }
 
@@ -17,7 +21,7 @@ a, a:hover{
 
 nav{
     background: #222;
-    padding: 5px 150px;
+    padding: 5px 100px;
     display: flex;
     align-items: center;
 }
@@ -65,34 +69,12 @@ nav a:hover{
     display: none;
 }
 
-@media screen and (max-width: 600px){
-    nav{
-        display: block;
-        position: relative;
-        padding: 15px 20px;
-    }   
-    
-    .menu{
-        margin-top: 15px;
-        display: none;
-    }
-
-    .menu.active, .toggle{
-        display: block;
-    }
-
-    .toggle{
-        position: absolute;
-        top: 15px;
-        right: 20px;
-    }
-}
-
-.headertitle{
+#header{
     padding: 40px 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .subtitle{
@@ -104,6 +86,7 @@ nav a:hover{
     width: 50%;
     float: left;
     margin-left: 150px;
+    
 }
 
 .gambartestimoni{
@@ -134,6 +117,7 @@ nav a:hover{
     display: inline-block;
     width: 50px;
     margin-right: 10px;
+    border-radius: 50%
 }
 
 .testimoni-profile{
@@ -164,7 +148,7 @@ nav a:hover{
     margin-bottom: 5px;
 }
 
-.judulform{
+#judulform{
     flex-basis: 25%;
     flex-grow: 0;
     background-color: #fde361;
@@ -173,7 +157,6 @@ nav a:hover{
     margin-right: 150px;
     padding: 50px;
     float: right;
-    
 }
 
 .contactus{
@@ -210,6 +193,7 @@ button{
     margin: 8px 0;
     width: 100%;
     font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .informasi{
@@ -218,12 +202,231 @@ button{
     float: left;
     margin-top: 20px;
     margin-left: 150px;
+    line-height: 30px;
 }
 
 .informasi-judul{
-
+    font-weight: bolder;
 }
 
 .informasi-list{
+    margin-left: 12px;
+    margin-bottom: 40px;
 
+}
+
+#package{
+    clear: left;
+    padding: 60px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    font-size: 25pt;
+}
+
+.package-informasi{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem ;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.package-list{
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.package-list img{
+    width: 50px;
+}
+
+.package-list h3{
+    margin: 4px 0 10px;
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+.package-list p{
+    line-height: 1.7;
+}
+
+#callaction{
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.callactiohead{
+    padding-bottom: 20px;
+}
+
+.callactionsub{
+    color: rgba(128, 128, 128, 0.914);
+    text-align: center;
+    padding-bottom: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.belisekarang{
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #111;
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.sosmed{
+    display: flex;
+    justify-content: center;
+}
+
+.sosmed a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%
+}
+
+.sosmed a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.sosmed a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.sosmed a:hover i{
+    color: #ffde3c;
+    transition: 0.5s;
+}
+
+.footernav{
+    margin: 30px 0;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footernav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernav ul li a:hover{
+    color: #ffde3c;
+    opacity: 1;
+}
+
+.hakcipta{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.hakcipta p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+@media screen and (max-width: 600px){
+    nav{
+        display: block;
+        position: relative;
+        padding: 18px 20px;
+    }   
+    
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    #header{
+        text-align: center;
+    }
+
+    #judulform{
+        flex-basis: 25%;
+        flex-grow: 0;
+        background-color: #fde361;
+        border-radius: 10px;
+        width: 50%;
+        margin-left: 5px;
+        padding: 50px;
+    }
+
+    .package-list{
+        
+    }
+
+    .footernav ul{
+        flex-direction: column;
+    }
+    
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+
+    }
+
+    .content-area {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+}
+}
+
+@media screen and (max-width: 1216px){
+    #judulform{
+        flex-basis: 25%;
+        flex-grow: 0;
+        background-color: #fde361;
+        border-radius: 10px;
+        width: 50%;
+        margin-left: 5px;
+        padding: 50px;
+    }
 }

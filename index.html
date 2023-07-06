@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <title>groceris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>E-Groceries</title>
 </head>
 <body>
-    <header>
+    <header id="home">
+    
+        <!--navigation start-->
     <nav>
         <div class="logo">
-            <a href="#"><img src="assets/logorevou.webp" alt="logo revou">REVOU</a>
+            <a href="#"><img src="assets/logorevou.webp" alt="logo revou">E-Groceries</a>
         </div>
         <div class="toggle">
             <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
         </div>
         <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Package</a></li>
-            <li><a href="#">Call Us</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#package">Our Package</a></li>
+            <li><a href="#callaction">Call Us</a></li>
         </ul>
     </nav>
 
@@ -39,29 +42,34 @@
         });
     </script>
 
-    <div class="headertitle">
-        <h1>Top Rate E-Groceries shop in indonesia</h1>
+    <!--header start-->
+    <div id="header">
+        <h1 class="headertitle">Top Rate E-Groceries shop in Indonesia</h1>
         <p class="subtitle">Every Day with Best Ingredients</p>
     </div>
     </header>
+
     <main>
         <section id="callus">
+            <!--testimoni start-->
             <article class="article">
                 <section>
-                    <img class="gambartestimoni" src="assets/bunga.jpg" alt="Foto testimoni">
+                    <img class="gambartestimoni" src="assets/sayurbuah.jpg" alt="Foto testimoni">
                 </section>
                 <div class="testimoni">
-                    <p class="testimoni-text">"Setiap hari beli sayur bunga disini"</p>
+                    <p class="testimoni-text">"Setiap hari beli sayur buah yang fresh disini"</p>
                     <div class="testimoni-profile">
-                      <img src="assets/profil.jpg" alt="foto profil" />
+                      <img src="assets/yedam.jpg" alt="foto profil" />
                     </div>
                     <div class="testimoni-info">
                       <h4 class="testimoni-name">Bang Yedam</h4>
-                      <h5 class="testimoni-job">Penyanyi, 20</h5>
+                      <h5 class="testimoni-job">Singer, 20</h5>
                     </div>
                 </div>
             </article>
-            <section class="judulform">
+
+            <!--form start-->
+            <section id="judulform">
                 <h3 class="contactus">Contact Us</h3>
                 <p class="contactustext">Sales akan menghubungin anda</p>
                 <form class="contactusform" action="" method="POST">
@@ -79,18 +87,87 @@
       
                   <button>Send</button>
                 </form>
-              </section>
+            </section>
+
         </section>
 
+        <!--informasi start-->
         <section class="informasi">
-            <p class="informasi-judul">Information</p>
+            <p class="informasi-judul">Manfaat makan sayur dan buah bagi kesehatan</p>
             <ol class="informasi-list">
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos ipsa ipsum quis ad voluptatibus.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos ipsa ipsum quis ad voluptatibus.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quos ipsa ipsum quis ad voluptatibus.</li>
+                <li>Memberikan perlindungan terhadap penyakit.</li>
+                <li>Sebagian vitamin, mineral yang terkandung dalam sayuran dan buah-buahan berperan sebagai antioksidan atau penangkal senyawa jahat dalam tubuh.</li>
+                <li>Membantu mengurangi obesitas dan pertahankan berat badan yang sehat.</li>
             </ol>
-        <section class="informasi">
+        </section>
+
+        <!--our package start-->
+        <section>
+            <section>
+                <h1 id="package">Our Package</h1>
+            </section>
+            <section class="package-informasi">
+                <div class="package-list">
+                    <img src="assets/wortel.png">
+                    <h3>Fresh Vegetable</h3>
+                    <p>Sayuran segar langsung dari sumber pertanian</p>
+                </div>
+                <div class="package-list">
+                    <img src="assets/apel.png">
+                    <h3>Fresh Fruit</h3>
+                    <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+                </div>
+                <div class="package-list">
+                    <img src="assets/cepat.png">
+                    <h3>Instant Delivery</h3>
+                    <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
+                </div>
+                <div class="package-list">
+                    <img src="assets/bumbu dapur.png">
+                    <h3>Kicthen Ingredient</h3>
+                    <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+                </div>
+                <div class="package-list">
+                    <img src="assets/pisau.png">
+                    <h3>Kitchen Set</h3>
+                    <p>Segala jenis alat masak untuk membantu kamu memasak</p>
+                </div>
+                <div class="package-list">
+                    <img src="assets/box.png">
+                    <h3>Bunding Set</h3>
+                    <p>bingung masak apa? sudah tersedia paket untuk kamu masak di dapur mu</p>
+                </div>
+            </section>
+        </section>
     </main>
+
+    <footer>
+        <!--Call to action-->
+        <div id="callaction">
+            <h1 class="callactiohead">Hidup sehat mulai sekarang!</h1>
+            <p class="callactionsub">Makanlah buah dan sayuran Anda untuk kesehatan yang prima dan kulit yang bercahaya</p>
+            <button class="belisekarang">Beli Sekarang!</button>
+        </div>
+
+        <!--footer start-->
+        <section class="footercontainer">
+            <section class="sosmed">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </section>
+            <section class="footernav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Our Package</a></li>
+                    <li><a href="">Call Us</a></li>
+                </ul>
+            </section>
+        </section>
+        <section class="hakcipta">
+            <p>Copyright &copy;2023; Designed by <span class="designer">Saya</span></p>
+        </section>
+    </footer>
 
 </body>
 </html>
